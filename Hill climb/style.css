@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.animation{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+.road__block{
+    height: 400px;
+    width: 500%;
+    display: block;
+    background-image: url("https://thumbs.dreamstime.com/b/%D0%BF%D1%80%D0%B5-%D0%BF%D0%BE%D1%81%D1%8B-%D0%BA%D0%B0-%D1%88%D0%BE%D1%81%D1%81%D0%B5-31670458.jpg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: road 25s linear infinite;
+}
+
+.car{
+  width: 400px;
+  position: absolute;
+  left: 70%;
+  bottom: 280px;  
+  transform: translateX(-20%);
+  z-index: 2;
+}
+.car img{
+    width: 200px;
+    animation: carHillClimb 1s linear infinite;
+}
+
+.wheel_car{
+    left: 70%;
+    position: absolute;
+    bottom: 250px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.wheel_car img{
+    width: 62px;
+    animation: wheel 1s linear infinite;
+}
+.back__wheel{
+    position: absolute;
+    left: -70px;
+    top: -108px;
+    
+}
+.front__wheel{
+    position: absolute;
+    left: 42px;
+    top: -108px;
+    
+}
+.police__car{
+    width: 400px;
+    position: absolute;
+    left: 30%;
+    bottom: 300px;  
+    transform: translateX(-20%);
+    z-index: 2;
+}
+
+.police__car img{
+    width: 200px;
+    animation: police 1s linear infinite;
+}
+.pol__wheel {
+    left: 30%;
+    position: absolute;
+    bottom: 250px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.marihuana{
+    width: 400px;
+    position: absolute;
+    left: 68%;
+    bottom: 370px;  
+    transform: translateX(-20%);
+     z-index: 2;
+}
+.marihuana img{
+    width: 70px;
+    animation: canaabis 2s linear infinite;
+}
+.pol__wheel img{
+    width: 70px;
+    animation: wheelPolice 1s linear infinite;
+}
+.wheel__back__police{
+    position: absolute;
+    left: -83px;
+    top: -95px;
+}
+.wheel__front__police{
+    position: absolute;
+    left: 40px;
+    top: -95px;
+}
+
+.hello{
+    width: 300px;
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    left: 550px;
+}
+.hello h1{
+    color: green;
+    letter-spacing: 5px;
+    font-size: 45px;
+    animation: Hello 5s linear infinite ;
+}
+
+audio{
+    outline: none;
+    width: 200px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+
+@keyframes road{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+@keyframes carHillClimb{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+@keyframes police{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes wheelPolice{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes canaabis{
+    20%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes Hello{
+    10%{
+        opacity: 0.1;
+    }
+    30%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
